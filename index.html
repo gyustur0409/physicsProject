@@ -40,23 +40,35 @@
             width: 100%;
         }
     </style>
+    <script>
+        window.onload = function() {
+            // 물리실험실1 버튼 요소 가져오기
+            var physicsEx1Button = document.querySelector('nav a:nth-child(2)');
+            
+            // 클릭 이벤트 리스너 추가
+            physicsEx1Button.addEventListener('click', function() {
+                // physicsEx1.html로 이동
+                window.location.href = 'physicsEx1.html';
+            });
+        };
+    </script>
 </head>
 <body>
 
     <header>
-        <h1>환영합니다</h1>
+        <h1>30612박준형 물리 실험실</h1>
     </header>
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#">물리실험실1</a>
+        <a href="#">물리실험실2</a>
+        <a href="#">물리실험실3</a>
     </nav>
 
     <main>
-        <h2>About Us</h2>
-        <p>홈페이지 예제 화면입니다. 자신의 목적에 맞게 수정해봅시다.</p>
+        <h2>프로젝트</h2>
+        <p>박준형의 물리 실험실입니다</p>
     </main>
 
     <footer>
